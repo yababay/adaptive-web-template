@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply text-center
+}
+
+h1 {
+    @apply text-3xl font-bold underline mt-24
+}
+
+ul {
+    max-width: 7rem;
+    margin: 0 auto;
+    @apply mt-5
+}
+
+li {
+    line-height: 3rem;
+    height: 3rem;
+    width: 6rem;
+    text-align: right;
+}
