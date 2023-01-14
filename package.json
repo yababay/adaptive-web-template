@@ -11,10 +11,8 @@
   "devDependencies": {
     "autoprefixer": "^10.4.13",
     "postcss": "^8.4.21",
+    "postcss-icon-blender": "^1.0.0-Beta.3",
     "tailwindcss": "^3.2.4",
     "vite": "^4.0.0"
-  },
-  "dependencies": {
-    "bootstrap-icons": "^1.10.3"
   }
 }
