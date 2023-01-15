@@ -1,11 +1,8 @@
 {
-  "name": "create-yababay-app",
-  "private": false,
-  "version": "0.0.12",
+  "name": "your-app-name",
+  "private": true,
+  "version": "0.0.0",
   "type": "module",
-  "bin": {
-    "create-yababay-app": "./index.js"
-  },
   "scripts": {
     "_purge-error-html": "sed -E -i 's/.assets/assets/g' dist/error.html",
     "_purge-eula-html": "sed -E -i 's/.assets/assets/g' dist/eula.html",
