@@ -14,7 +14,7 @@
     "deploy": "npm run docs && git add . && git commit -am publish && git push origin main"
   },
   "devDependencies": {
-    "@yababay67/postcss-bootstrap-icons": "^0.0.2",
+    "postcss-bootstrap-icons": "^0.1.3",
     "autoprefixer": "^10.4.13",
     "postcss": "^8.4.21",
     "postcss-icon-blender": "^1.0.0-Beta.3",
