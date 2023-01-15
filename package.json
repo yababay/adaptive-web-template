@@ -7,7 +7,7 @@
     "_purge-error-html": "sed -E -i 's/.assets/assets/g' dist/error.html",
     "_purge-eula-html": "sed -E -i 's/.assets/assets/g' dist/eula.html",
     "_purge-index-html": "sed -E -i 's/.assets/assets/g' dist/index.html",
-    "_docs": "rm -rf docs && rm -rf dist && npm run build && npm run _purge-error-html && npm run _purge-eula-html && npm run _purge-index-html && mv dist docs",
+    "_docs": "git rm -rf docs && rm -rf dist && npm run build && npm run _purge-error-html && npm run _purge-eula-html && npm run _purge-index-html && mv dist docs",
     "_icons": "mkdir docs/assets/img && mv docs/img/icons docs/assets/img",
 
     "dev": "vite",
