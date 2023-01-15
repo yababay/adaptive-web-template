@@ -8,10 +8,11 @@
     "purge-eula-html": "sed -E -i 's/.assets/assets/g' dist/eula.html",
     "purge-index-html": "sed -E -i 's/.assets/assets/g' dist/index.html",
     "docs": "rm -rf docs && rm -rf dist && npm run build && npm run purge-error-html && npm run purge-eula-html && npm run purge-index-html && mv dist docs",
+    "icons": "mkdir docs/assets/img && mv docs/img/icons docs/assets/img",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "deploy": "npm run docs && git add . && git commit -am publish && git push origin main"
+    "deploy": "npm run docs && npm run icons && git add . && git commit -am publish && git push origin main"
   },
   "devDependencies": {
     "postcss-bootstrap-icons": "^0.1.3",
