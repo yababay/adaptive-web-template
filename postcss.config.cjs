@@ -1,14 +1,7 @@
-//const iconblender = require('postcss-icon-blender')
-
 module.exports = {
   plugins: [
-    require('postcss-icon-blender'),
+    require('@yababay67/postcss-bootstrap-icons'),
     require('autoprefixer'),
     require('tailwindcss')
   ]
-  /*plugins: {
-    iconblender: {},
-    tailwindcss: {},
-    autoprefixer: {},
-  },*/
 }

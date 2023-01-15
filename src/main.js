@@ -1,2 +1,2 @@
 import './style.css'
-import './icon-blender.css'
+import '@yababay67/postcss-bootstrap-icons/bootstrap-icons-demo.css'
