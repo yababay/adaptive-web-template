@@ -1,21 +1,21 @@
 {
   "name": "create-yababay-app",
   "private": false,
-  "version": "0.0.12",
+  "version": "0.0.15",
   "type": "module",
   "bin": {
     "create-yababay-app": "./index.js"
   },
   "scripts": {
-    "_purge-error-html": "sed -E -i 's/.assets/assets/g' dist/error.html",
-    "_purge-eula-html": "sed -E -i 's/.assets/assets/g' dist/eula.html",
     "_purge-index-html": "sed -E -i 's/.assets/assets/g' dist/index.html",
-    "_docs": "git rm -rf docs && rm -rf dist && npm run build && npm run _purge-error-html && npm run _purge-eula-html && npm run _purge-index-html && mv dist docs",
+    "_purge-icons-html": "sed -E -i 's/.assets/assets/g' dist/icons.html",
+    "_docs": "rm -rf docs && rm -rf dist && npm run build && npm run _purge-icons-html && npm run _purge-index-html && mv dist docs",
     "_icons": "mkdir docs/assets/img && mv docs/img/icons docs/assets/img",
     "_logo":  "cp docs/img/logo.svg docs/assets/img",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
+    "publish": "npm publish --access public",
     "deploy": "npm run _docs && npm run _icons && npm run _logo && git add . && git commit -am publish && git push origin main"
   },
   "devDependencies": {

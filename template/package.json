@@ -4,15 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "_purge-error-html": "sed -E -i 's/.assets/assets/g' dist/error.html",
-    "_purge-eula-html": "sed -E -i 's/.assets/assets/g' dist/eula.html",
-    "_purge-index-html": "sed -E -i 's/.assets/assets/g' dist/index.html",
-    "_docs": "git rm -rf docs && rm -rf dist && npm run build && npm run _purge-error-html && npm run _purge-eula-html && npm run _purge-index-html && mv dist docs",
-    "_icons": "mkdir docs/assets/img && mv docs/img/icons docs/assets/img",
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview",
-    "deploy": "npm run _docs && npm run _icons && git add . && git commit -am publish && git push origin main"
+    "preview": "vite preview"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",

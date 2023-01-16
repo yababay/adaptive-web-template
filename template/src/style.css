@@ -1,0 +1,27 @@
+/*
+ * Please feel free to change and remove these styles.
+ */
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+figure img {
+    width: 640px;
+    height: auto;
+}
+
+figcaption {
+    text-align: center;
+}
+
+article.icons {
+    max-width: 640px;
+    @apply p-3 border-2 border-gray-300 rounded-md;
+}
+
+article.icons p {
+    @apply mt-5;
+}
