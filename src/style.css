@@ -1,21 +1,27 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/*
+ * Please feel free to change and remove these styles.
+ */
 
-body {
-    @apply text-center
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
-h1 {
-    @apply text-3xl font-bold underline mt-24
+figure img {
+    width: 640px;
+    height: auto;
 }
 
-ul {
-    max-width: 20rem;
-    margin: 0 auto;
-    @apply mt-5
+figcaption {
+    text-align: center;
 }
 
-li {
-    @apply mt-3
+article.icons {
+    max-width: 640px;
+    @apply p-3 border-2 border-gray-300 rounded-md;
+}
+
+article.icons p {
+    @apply mt-5;
 }

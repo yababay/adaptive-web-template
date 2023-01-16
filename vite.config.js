@@ -5,9 +5,8 @@ export default defineConfig({
   build: {
     rollupOptions: {
       input: {
-        main: resolve(__dirname, 'index.html'),
-        error: resolve(__dirname, 'error.html'),
-        eula: resolve(__dirname, 'eula.html'),
+        main: resolve(__dirname,  'index.html'),
+        error: resolve(__dirname, 'icons.html'),
       },
     },
   },
