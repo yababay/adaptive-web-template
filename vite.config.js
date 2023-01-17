@@ -7,6 +7,7 @@ export default defineConfig({
       input: {
         main: resolve(__dirname,  'index.html'),
         error: resolve(__dirname, 'icons.html'),
+        eula: resolve(__dirname, 'eula.html'),
       },
     },
   },

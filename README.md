@@ -1,5 +1,5 @@
-# vite-vanilla-tailwind-svg
+# "Ванильный" (без фреймворков) шаблон с Tailwind и иконками
 
-"Ванильный" (без фреймворков) шаблон с Tailwind и иконками.
+![./screenshot.png](Скриншот)
 
-[Посмотреть](https://yababay.github.io/vite-vanilla-tailwind-svg).
+[Посмотреть](https://yababay.github.io/yababay-web-template/).
