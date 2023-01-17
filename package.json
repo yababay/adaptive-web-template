@@ -1,7 +1,7 @@
 {
   "name": "create-yababay-app",
   "private": false,
-  "version": "0.0.16",
+  "version": "0.0.17",
   "type": "module",
   "bin": {
     "create-yababay-app": "./index.js"
