@@ -16,7 +16,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "publish": "npm publish --access public",
-    "deploy": "npm run _docs && npm run _icons && npm run _logo && git add . && git commit -am publish && git push origin main"
+    "deploy": "npm run _docs && npm run _icons && npm run _logo && git add . && git commit -am publish && git push origin pug"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
