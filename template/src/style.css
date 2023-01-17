@@ -1,15 +1,22 @@
-/*
- * Please feel free to change and remove these styles.
- */
-:root {
-    --figcaption-height: 2rem;
-    --image-size-landscape: calc(var(--main-min-height) - var(--figcaption-height));  
-}
+@import "./css/index.css"; 
 
 main {
     display: flex;
     align-items: center;
     justify-content: space-around;
+}
+
+article.icons p, article.icons h1 {
+    text-align: center;
+}
+
+figure {
+    margin: 0 auto;
+}
+
+figure img {
+    width: 100%;
+    height: 100%;
 }
 
 figcaption {
@@ -19,24 +26,15 @@ figcaption {
 }
 
 @media (orientation: landscape) {
-    figure img {
-        height: var(--image-size-landscape);
-        width: auto;
+    figure {
+        height: var(--figure-image-size-landscape);
+        width:  var(--figure-image-size-landscape);
     }
 }
 
 @media (orientation: portrait) {
-    figure img {
-        height: 100vw;
-        width: 100vw;
+    figure {
+        height: var(--figure-image-size-portrait);
+        width:  var(--figure-image-size-portrait);
     }
-}
-
-article.icons {
-    max-width: 640px;
-    @apply p-3 border-2 border-gray-300 rounded-md;
-}
-
-article.icons p {
-    @apply mt-5;
 }
