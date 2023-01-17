@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 /*
- * Please change and remove styles below only if you are sure what you are doing.
+ * Please change, add and/or remove styles below only if you are sure what you are doing.
  */
 
 :root {
@@ -21,36 +21,74 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        z-index: 10;
     }
 
     header {
         height: var(--header-height);
         line-height: var(--header-height);
         font-size: var(--header-font-size);
-        display: flex;
-        justify-content: space-between;
+        text-align: right;
     }
 
     header .brand {
-        @apply ml-5;
+        @apply ml-3 absolute;
     }
 
-    header .brand .logo {
+    header .brand .logo, header .links .burger {
         @apply icon;
-        background-image: url(img/logo.svg);
         width: calc(var(--header-height) * .5);
         height: calc(var(--header-height) * .45);
     }
 
+    header .brand .logo {
+        background-image: url(img/logo.svg);
+    }
+
+    header .links .burger {
+        @apply mr-3 inline-block xs:hidden z-10;
+    }
+
     header ul {
-        @apply mr-5;
+        display: inline-block;
+        @apply
+            xs:mr-3
+            xs:inline-block 
+            xs:z-30 
+            max-xs:absolute 
+            max-xs:right-0 
+            max-xs:w-64 
+            max-xs:border-2
+            max-xs:m-2
+            max-xs:p-2
+            max-xs:border-gray-300
+            max-xs:rounded-md
+            max-xs:text-left
+            max-xs:bg-white
+            max-xs:opacity-80
+            max-xs:z-0
+            max-xs:hidden
     }
 
     header ul li {
-        display: inline-block;
-        font-size: 1rem;
-        @apply ml-3
+        @apply ml-3 xs:inline-block xs:m-1
     }
+
+    header ul li:last-child {
+        @apply xs:hidden
+    }
+    
+/*    header .links {
+        @apply h-32 w-32 relative;
+    }
+
+    header ul {
+        display: inline-block;
+        @apply mr-3;
+        @apply max-xs:absolute max-xs:inset-y-0 max-xs:right-0 max-xs:w-32 max-xs:invisible max-xs:z-0;
+    }
+
+    */
     
     footer {
         height: var(--footer-height);
@@ -126,9 +164,10 @@
         height: 1.2rem;
     }
 
-    .text-base .bi, .bi.base {
+    .text-base .bi, .bi.base, .bi {
         width: 1.2rem;
         height: 1.1rem;
+        margin: .18rem .25rem 0 0;
     }
 
     .text-sm .bi, .bi.sm {

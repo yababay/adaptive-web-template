@@ -1,10 +1,8 @@
-.bi.telegram { @icon bi telegram }
-.bi.wallet   { @icon bi wallet }
-.bi.alarm    { @icon bi alarm }
-.bi.bell     { @icon bi bell }
-.bi.check    { @icon bi check }
-.bi.image    { @icon bi image }
-.bi.github   { @icon bi github }
+.bi.check  { @icon bi check }
+.bi.image  { @icon bi image }
+.bi.github { @icon bi github }
+.bi.list   { @icon bi list }
+.bi.x-lg   { @icon bi x-lg }
 
 /*
  * Uncomment required lines (move it up from commented block).

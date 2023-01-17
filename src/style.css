@@ -1,6 +1,10 @@
 /*
  * Please feel free to change and remove these styles.
  */
+:root {
+    --figcaption-height: 2rem;
+    --image-size-landscape: calc(var(--main-min-height) - var(--figcaption-height));  
+}
 
 main {
     display: flex;
@@ -8,13 +12,24 @@ main {
     justify-content: space-around;
 }
 
-figure img {
-    width: 640px;
-    height: auto;
-}
-
 figcaption {
     text-align: center;
+    height: var(--figcaption-height);
+    line-height: var(--figcaption-height);
+}
+
+@media (orientation: landscape) {
+    figure img {
+        height: var(--image-size-landscape);
+        width: auto;
+    }
+}
+
+@media (orientation: portrait) {
+    figure img {
+        height: 100vw;
+        width: 100vw;
+    }
 }
 
 article.icons {
