@@ -1,0 +1,3 @@
+<template>
+    <footer>&copy;&nbsp;2023&nbsp;Михаил Беляков</footer>
+</template>

@@ -1,28 +1,28 @@
 {
-  "name": "create-yababay-app",
-  "private": false,
-  "version": "0.0.17",
-  "type": "module",
-  "bin": {
-    "create-yababay-app": "./index.js"
-  },
   "scripts": {
-    "_purge-index-html": "sed -E -i 's/.assets/assets/g' dist/index.html",
-    "_purge-icons-html": "sed -E -i 's/.assets/assets/g' dist/icons.html",
-    "_docs": "rm -rf docs && rm -rf dist && npm run build && npm run _purge-icons-html && npm run _purge-index-html && mv dist docs",
-    "_icons": "mkdir docs/assets/img && mv docs/img/icons docs/assets/img",
-    "_logo":  "cp docs/img/logo.svg docs/assets/img",
-    "dev": "vite",
+    "dev": "npm run server",
+    "prod": "npm run build && npm run server:prod",
     "build": "vite build",
     "preview": "vite preview",
-    "publish": "npm publish --access public",
-    "deploy": "npm run _docs && npm run _icons && npm run _logo && git add . && git commit -am publish && git push origin main"
+    "server": "node ./src/lib/server",
+    "server:prod": "cross-env NODE_ENV=production node ./server"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.13",
-    "postcss": "^8.4.21",
-    "postcss-bootstrap-icons": "^0.1.3",
-    "tailwindcss": "^3.2.4",
-    "vite": "^4.0.0"
+    "@vitejs/plugin-vue": "^4.0.0",
+    "@vue/compiler-sfc": "^3.2.33",
+    "@vue/server-renderer": "^3.2.33",
+    "autoprefixer": "^10.4.8",
+    "compression": "^1.7.4",
+    "cross-env": "^7.0.3",
+    "express": "^4.18.1",
+    "postcss": "^8.4.14",
+    "sirv": "^2.0.2",
+    "tailwindcss": "^3.1.7",
+    "vite": "^4.0.3",
+    "vite-plugin-ssr": "^0.4.69",
+    "vue": "^3.2.33",
+    "@iconify/json-tools": "^1.0.10",
+    "icon-blender": "^1.0.0-beta.4",
+    "postcss-bootstrap-icons": "^0.1.9"
   }
 }

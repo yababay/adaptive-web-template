@@ -1,14 +1,17 @@
-import { resolve } from 'path'
-import { defineConfig } from 'vite'
+import vue from '@vitejs/plugin-vue'
+import ssr from 'vite-plugin-ssr/plugin'
 
-export default defineConfig({
-  build: {
-    rollupOptions: {
-      input: {
-        main: resolve(__dirname,  'index.html'),
-        error: resolve(__dirname, 'icons.html'),
-        eula: resolve(__dirname, 'eula.html'),
-      },
-    },
-  },
-})
+export default {
+    plugins: [
+        vue(), 
+        ssr({ 
+            prerender: {noExtraDir: true}
+        })
+    ],
+    resolve: {
+        alias: {
+         "#root": __dirname,
+        }
+    }
+}
+
