@@ -24,6 +24,7 @@ figcaption {
     height: var(--figcaption-height);
     line-height: var(--figcaption-height);
     font-size: smaller;
+    vertical-align: top;
 }
 
 @media (orientation: landscape) {

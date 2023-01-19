@@ -43,10 +43,10 @@
     <div class="links">
         <ul ref="menu">
             <li>
-                <i class="bi file-earmark-check"></i><a href="eula.html">EULA</a>
+                <i class="bi file-earmark-check"></i><a href="./eula">EULA</a>
             </li>
             <li>
-                <i class="bi image"></i><a href="icons.html">Иконки</a>
+                <i class="bi image"></i><a href="./icons">Иконки</a>
             </li>
             <li>
                 <i class="bi github"></i><a href="https://github.com/yababay/vite-vanilla-tailwind-svg"

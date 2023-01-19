@@ -1,3 +1,10 @@
+<script setup>
+    const props = defineProps({
+        author: String,
+        year: Number
+    })
+</script>
+
 <template>
-    <footer>&copy;&nbsp;2023&nbsp;Михаил Беляков</footer>
+    <footer>&copy;&nbsp;{{ year }}&nbsp;{{ author }}</footer>
 </template>

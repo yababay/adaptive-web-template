@@ -1,7 +1,8 @@
 import { renderToString } from '@vue/server-renderer'
 import { escapeInject, dangerouslySkipEscape } from 'vite-plugin-ssr'
 import { createApp } from './app'
-import logoUrl from './logo.svg'
+import logoUrl from '/img/logo.svg'
+import documentProps from './settings.json'
 
 export { render }
 // See https://vite-plugin-ssr.com/data-fetching
@@ -12,7 +13,7 @@ async function render(pageContext) {
   const appHtml = await renderToString(app)
 
   // See https://vite-plugin-ssr.com/head
-  const { documentProps } = pageContext.exports
+  // const { documentProps } = pageContext.exports
   const title = (documentProps && documentProps.title) || 'Vite SSR app'
   const desc = (documentProps && documentProps.description) || 'App using Vite + vite-plugin-ssr'
 

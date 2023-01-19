@@ -56,7 +56,3 @@ header ul li {
         text-base
         max-xs:block 
 }
-
-header ul li:last-child {
-    @apply xs:hidden
-}
