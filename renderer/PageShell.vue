@@ -5,7 +5,8 @@
 </template>
 
 <script setup>
-  import settings from './settings.json'
+
+  import settings from '#root/settings.json'
   import Header from '#root/components/header/index.vue'
   import Footer from '#root/components/footer/index.vue'
 

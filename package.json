@@ -1,14 +1,15 @@
 {
-  "name": "create-yababay-ssg",
+  "name": "@yababay67/web-template-ssg",
   "private": false,
-  "version": "0.0.6",
+  "version": "0.0.7",
   "bin": {
     "create-yababay-ssg": "./index.js"
   },
   "scripts": {
     "dev": "npm run server",
     "prod": "npm run build && npm run server:prod",
-    "build": "vite build",
+    "build": "vite build && npm run build:icons",
+    "build:icons": "mkdir -p dist/client/assets/img && mv dist/client/img/icons/ dist/client/assets/img",
     "preview": "vite preview",
     "server": "node ./src/lib/server",
     "server:prod": "cross-env NODE_ENV=production node ./server",
