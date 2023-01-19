@@ -23,6 +23,7 @@ figcaption {
     text-align: center;
     height: var(--figcaption-height);
     line-height: var(--figcaption-height);
+    font-size: smaller;
 }
 
 @media (orientation: landscape) {

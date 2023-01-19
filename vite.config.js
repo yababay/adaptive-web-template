@@ -5,12 +5,12 @@ export default {
     plugins: [
         vue(), 
         ssr({ 
-            prerender: {noExtraDir: true}
+            prerender: true
         })
     ],
     resolve: {
         alias: {
-         "#root": __dirname,
+         "#root": `${__dirname}/src`,
         }
     }
 }

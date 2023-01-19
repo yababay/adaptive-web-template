@@ -1,10 +1,7 @@
 <template>
-  <App>
-    <Main />
-  </App>
+  <Index />
 </template>
 
 <script setup>
-  import App from '../../src/App.vue'
-  import Main from '../../src/components/index.vue'
+  import Index from '#root/pages/index/index.vue'
 </script>

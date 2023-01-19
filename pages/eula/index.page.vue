@@ -3,5 +3,5 @@
 </template>
 
 <script setup>
-  import Index from '#root/pages/icons/index.vue'
+  import Index from '#root/pages/eula/index.vue'
 </script>

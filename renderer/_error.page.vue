@@ -1,14 +1,16 @@
 <template>
-  <div v-if="is404">
+  <Index />
+  <!-- div v-if="is404">
     <h1>404 Page Not Found</h1>
     <p>This page could not be found.</p>
   </div>
   <div v-else>
     <h1>500 Internal Server Error</h1>
     <p>Something went wrong.</p>
-  </div>
+  </div -->
 </template>
 
 <script setup>
-defineProps(['is404'])
+  import Index from '#root/pages/error/index.vue'
+  defineProps(['is404'])
 </script>
