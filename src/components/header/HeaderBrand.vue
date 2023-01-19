@@ -1,5 +1,5 @@
 <template>
-    <a href=".">
+    <a href="/">
         <div class="brand">
             <span class="logo"></span>
             <span class="motto">{{ motto }}</span>
