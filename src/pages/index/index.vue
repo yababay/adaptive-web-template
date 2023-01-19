@@ -1,0 +1,13 @@
+<template>
+  <App>
+    <figure>
+        <img src="img/hero.svg">
+        <figcaption>
+          <a href="https://www.freepik.com/free-vector/happy-freelancer-with-computer-home-young-man-sitting-armchair-using-laptop-chatting-online-smiling-vector-illustration-distance-work-online-learning-freelance_10172825.htm#query=man%20smiling&position=15&from_view=keyword" target="_blank">Image by pch.vector</a>        </figcaption>
+      </figure>
+  </App>
+</template>
+
+<script setup>
+  import App from '#root/components/App.vue'
+</script>
