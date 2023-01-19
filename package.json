@@ -1,7 +1,10 @@
 {
   "name": "create-yababay-ssg",
   "private": false,
-  "version": "0.0.1",
+  "version": "0.0.2",
+  "bin": {
+    "create-yababay-ssg": "./index.js"
+  },
   "scripts": {
     "dev": "npm run server",
     "prod": "npm run build && npm run server:prod",
