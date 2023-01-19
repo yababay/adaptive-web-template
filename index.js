@@ -2,13 +2,13 @@
 
 // Usage: npx create-yababay-app my-app
 
-import fs from 'fs';
-import path from 'path';
-import { fileURLToPath } from 'url';
+const fs = require('fs');
+const path  = require('path');
+const { fileURLToPath } = require('url');
 
 // Hack ES6 module rules.
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+//const __filename = fileURLToPath(import.meta.url);
+//const __dirname = path.dirname(__filename);
 
 const projectName = process.argv[2];
 
@@ -26,10 +26,8 @@ fs.renameSync(
   path.join(projectDir, '.gitignore')
 );
 
-const docsDir = path.join(projectDir, 'docs');
 const tmplDir = path.join(projectDir, 'template');
 const indexFile = path.join(projectDir, 'index.js');
-fs.rmSync(docsDir, { recursive: true });
 fs.rmSync(tmplDir, { recursive: true });
 fs.unlinkSync(indexFile);
 

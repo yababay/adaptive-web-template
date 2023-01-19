@@ -8,8 +8,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "server": "node ./src/lib/server",
-    "server:prod": "cross-env NODE_ENV=production node ./server",
-    "publish": "npm publish --access public"
+    "server:prod": "cross-env NODE_ENV=production node ./server"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.0.0",
