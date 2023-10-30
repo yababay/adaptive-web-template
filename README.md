@@ -2,4 +2,4 @@
 
 ![Скриншот](screenshot.png)
 
-[Посмотреть](https://yababay.github.io/yababay-web-template/).
+[Посмотреть в браузере](https://yababay.github.io/yababay-web-template/).
