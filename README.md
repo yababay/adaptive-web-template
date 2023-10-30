@@ -1,5 +1,5 @@
 # "Ванильный" (без фреймворков) шаблон с Tailwind и иконками
 
-![./screenshot.png](Скриншот)
+![Скриншот](screenshot.png)
 
 [Посмотреть](https://yababay.github.io/yababay-web-template/).
